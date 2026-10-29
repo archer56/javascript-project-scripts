@@ -1,17 +1,14 @@
 {
+  "extends": "./lib/tsconfig.node.json",
   "compilerOptions": {
-    "outDir": "./dist/",
-    "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop" : true,
-    "lib": [
-      "ES2018",
-      "DOM"
-    ]
-  }
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": [
+    "src/build/index.mts"
+  ],
+  "exclude": ["node_modules", "lib", "dist"]
 }

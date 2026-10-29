@@ -7,9 +7,9 @@
     "build:types": "tsc",
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:patch": "npm version patch && npm publish",
-    "publish:minor": "npm version minor && npm publish",
-    "publish:major": "npm version major && npm publish"
+    "publish:patch": "npm version patch",
+    "publish:minor": "npm version minor",
+    "publish:major": "npm version major"
   },
   "engines": {
     "node": ">=24.12.0"

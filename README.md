@@ -36,7 +36,7 @@ import sharedConfig from 'javascript-project-scripts/eslint-config';
 export default sharedConfig;
 ```
 
-Secondly create `.prettierrc.js` in your root directory and add the following:
+Secondly create `.prettierrc.cjs` in your root directory and add the following:
 
 ```js
   module.exports = require('javascript-project-scripts/prettierrc.js');
